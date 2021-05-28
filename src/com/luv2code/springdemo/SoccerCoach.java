@@ -8,4 +8,10 @@ public class SoccerCoach implements Coach {
 		return "Bend it like Beckham!";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
