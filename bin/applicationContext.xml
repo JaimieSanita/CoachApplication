@@ -12,6 +12,8 @@
 
 	<bean id="myFortuneService" class="com.luv2code.springdemo.HappyFortuneService"></bean>
 
+	<bean id="myRandomFortuneService" class="com.luv2code.springdemo.RandomFortuneService"></bean>
+	
 	<bean id="mySoccerCoach" class="com.luv2code.springdemo.SoccerCoach">
 
 		<!-- set up setter injection -->
@@ -26,6 +28,11 @@
 	<bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
 		<!--set up constructor injection-->
 		<constructor-arg ref="myFortuneService" />
+	</bean>
+	
+	<bean id="myBaseballCoach" class="com.luv2code.springdemo.BaseballCoach">
+		<!--set up constructor injection-->
+		<constructor-arg ref="myRandomFortuneService" />
 	</bean>
 
 
