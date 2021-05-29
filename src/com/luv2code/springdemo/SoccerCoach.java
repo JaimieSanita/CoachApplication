@@ -46,5 +46,13 @@ public class SoccerCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+	
+	public void startUpMethod() {
+		System.out.println("SoccerCoach: inside startUpMethod");
+	}
+	
+	public void destroyMethod() {
+		System.out.println("SoccerCoach: insdie destroy method");
+	}
 
 }
